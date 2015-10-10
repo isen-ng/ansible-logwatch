@@ -12,6 +12,9 @@ Role Variables
     # default is Logwatch
     logwatch_mail_from: 'Logwatch'
 
+    # Ouptput: stdout, file, mail
+    logwatch_output: 'stdout'
+
     # Format: text, html
     logwatch_format: 'html'
 
