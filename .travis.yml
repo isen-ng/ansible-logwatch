@@ -34,4 +34,4 @@ script:
     || (echo 'Idempotence test: fail' && return 1)
 
   # Run logwatch
-  - logwatch --format text
+  - sudo logwatch --format text
