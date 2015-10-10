@@ -34,4 +34,4 @@ script:
     || (echo 'Idempotence test: fail' && return 1)
 
   # Run logwatch
-  - sudo logwatch --output stdout --service zz-sys
+  - sudo logwatch --output stdout --format text --service zz-sys
