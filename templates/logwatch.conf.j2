@@ -1,4 +1,4 @@
-# 
+#
 # {{ ansible_managed }}
 # DO NOT EDIT BY HAND - change config in ansible configuration instead
 #
@@ -9,6 +9,10 @@ MailTo = {{ logwatch_mail_to }}
 
 {% if logwatch_mail_from %}
 MailFrom = {{ logwatch_mail_from }}
+{% endif %}
+
+{% if logwatch_output %}
+Output = {{ logwatch_output }}
 {% endif %}
 
 {% if logwatch_format %}
