@@ -1,5 +1,5 @@
-Role Name
-=========
+logwatch [![Build Status](https://travis-ci.org/ThoMo/ansible-logwatch.svg?branch=master)](https://travis-ci.org/ThoMo/ansible-logwatch)
+========
 
 Ansible role to install and configure logwatch.
 
