@@ -36,6 +36,6 @@ script:
   # Run logwatch
   - >
     sudo logwatch --output stdout --format text --service zz-sys
-    | grep "#### Logwatch" | wc -l | grep -q '3'
+    | grep "#### Logwatch" | wc -l | grep -q '2'
     && (echo 'run test: pass' && return 0)
     || (echo 'run test: fail' && return 1)
