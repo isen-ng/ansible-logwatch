@@ -32,3 +32,6 @@ script:
     | grep -q 'changed=0.*failed=0'
     && (echo 'Idempotence test: pass' && return 0)
     || (echo 'Idempotence test: fail' && return 1)
+
+  # Run logwatch
+  - logwatch --format text
