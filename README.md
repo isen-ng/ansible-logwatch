@@ -1,7 +1,27 @@
-logwatch [![Build Status](https://travis-ci.org/ThoMo/ansible-logwatch.svg?branch=master)](https://travis-ci.org/ThoMo/ansible-logwatch)
+Ansible Role: thomo.logwatch [![Build Status](https://travis-ci.org/ThoMo/ansible-logwatch.svg?branch=master)](https://travis-ci.org/ThoMo/ansible-logwatch)
 ========
 
 Ansible role to install and configure logwatch.
+
+Installation
+------------
+### Ansible Galaxy
+
+If you want to install it in the local ansible project dir:
+
+    ansible-galaxy install -p roles thomo.logwatch
+
+To install it on system level
+
+    ansible-galaxy install thomo.logwatch
+
+### Manual
+
+Alternative you can install it by downloading it from github.
+
+    wget https://github.com/thomo/ansible-logwatch/archive/master.zip
+    unzip -d roles master.zip
+    mv roles/ansible-logwatch-master roles/thomo.logwatch
 
 Role Variables
 --------------
@@ -51,7 +71,7 @@ Example Playbook
 
     - hosts: servers
       roles:
-         - role: logwatch
+         - role: thomo.logwatch
            logwatch_detail: 'Med'
 
 License
@@ -62,4 +82,4 @@ License
 Author Information
 ------------------
 
-Thomas Mohaupt https://github.com/ThoMo/ansible-logwatch
+Thomas Mohaupt https://github.com/thomo/ansible-logwatch
