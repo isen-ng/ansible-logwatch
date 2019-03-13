@@ -7,10 +7,10 @@ logwatch_mail_to: 'root'
 logwatch_mail_from: 'Logwatch'
 
 # Ouptput: stdout, file, mail
-logwatch_output: 'stdout'
+logwatch_output: 'mail'
 
 # Format: text, html
-logwatch_format: 'html'
+logwatch_format: 'text'
 
 # default is 'all'
 logwatch_services: [all]
